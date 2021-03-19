@@ -8,3 +8,5 @@ if (navigator.onLine)
     //is not connected to Internet
 
 }
+
+//end
