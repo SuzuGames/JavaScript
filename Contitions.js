@@ -1,5 +1,6 @@
 var a = Math.floor((Math.random() * 5) + 1);
 // new variable a
+
 if (a === 1)
 {
 
