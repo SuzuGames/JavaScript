@@ -54,13 +54,15 @@ setTimeout(function(){
     if (windowObjRef.closed)
     {
     
-        // Has cerrado la página. No recibes premio.
+        // You closed the ad. No rewards.
         console.log("Premio no recibido.")
     
     }else{
     
-        // La página sigue abierta después de la espera. Premios conseguido.
+        // The ad keeps opened. Take your random reward.
         AudioManager.playSe({name: "coin", pan: 0, pitch: 100, volume: 100});
+        var adgold = Math.floor((Math.random() * 10) + 1);
+        $gameParty.gainGold(adgold);
         console.log("Premio recibido.")
         windowObjRef.close();
     
