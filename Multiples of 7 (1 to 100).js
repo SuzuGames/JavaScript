@@ -1,3 +1,31 @@
+// vvv Editar aquí vvv
+
+
+Numero = 8
+// Sacar múltiplos de...
+
+Min = 1
+// Número mínimo, se usará para empezar.
+
+Max = 100
+// Número máximo, se usará para terminar.
+
+
+// ^^^ Editar aquí^^^
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function multiple(n, multiple){
 
     resto = n % multiple;
@@ -16,9 +44,9 @@ function multiple(n, multiple){
 
 var multiples=[];
 
-for(var i=1;i<=100;i++){
+for(var i=Min;i<=Max;i++){
 
-    if(multiple(i,7)){
+    if(multiple(i,Multiplo)){
 
         multiples.push(i);
 
@@ -26,4 +54,4 @@ for(var i=1;i<=100;i++){
 
 };
 
-console.log("Multiples of 7:", multiples);
+console.log("Múltiplos de " + Multiplo + ":", multiples);
